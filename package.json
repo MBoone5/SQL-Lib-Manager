@@ -18,7 +18,11 @@
   },
   "homepage": "https://github.com/MBoone5/SQL-Lib-Manager#readme",
   "dependencies": {
+    "cookie-parser": "^1.4.4",
     "express": "^4.16.4",
+    "http-errors": "^1.7.2",
+    "morgan": "^1.9.1",
+    "path": "^0.12.7",
     "pug": "^2.0.3",
     "sequelize": "^4.42.1",
     "sequelize-cli": "^5.4.0",
