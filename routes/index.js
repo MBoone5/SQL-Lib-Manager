@@ -56,7 +56,7 @@ router.all('/books/:id', (req, res, next) => {
 
 // GET - book details
 router.get('/books/:id', (req, res, next) => {
-  Promise.resolve().then(() => {
+  Promise.resolve().then(() => { // Promise.resolve() removes the overhead of try {}
     res.render('update-book', { target: `/books/${req.params.id}` });
   }).catch((err) => {
     next(err);
