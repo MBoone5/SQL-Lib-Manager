@@ -1,6 +1,7 @@
 extends layout
 
+//- friendly error message
 block content
-  h1= error.message
-  h2= error.status
+  h1  Something's Gone Wrong: #{error.status}
+  h2= error.message
   pre #{error.stack}
