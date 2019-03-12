@@ -43,7 +43,7 @@ router.route('/books/new')
 
 
 // middleware to find the book by id
-router.all('/books/:id', (req, res, next) => {
+router.param('id', (req, res, next, id) => {
   /* instead of finding the book on 3 different routes, 
   find it once and pass it through middleware */
   Books.findByPk(req.params.id).then((result) => {
